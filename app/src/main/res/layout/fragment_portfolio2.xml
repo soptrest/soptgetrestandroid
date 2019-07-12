@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".Fragment.Portfolio2Fragment">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageView
+                android:id="@+id/img_portfolio1_blank"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="120dp"
+                android:src="@drawable/img_blank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <LinearLayout
+                android:layout_marginTop="11dp"
+                android:gravity="center_horizontal"
+                android:layout_below="@+id/img_portfolio1_blank"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:lineSpacingExtra="4sp"
+                    android:textColor="#b1b1b1"
+                    android:textSize="13sp"
+                    android:text="아직 기록을 하지 않았어요."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:lineSpacingExtra="4sp"
+                    android:textColor="#b1b1b1"
+                    android:textSize="13sp"
+                    android:text="어떤 경험을 했는지 알려주세요!"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <Button
+                android:id="@+id/btn_portfolio_record"
+                android:layout_marginTop="20.3dp"
+                android:background="#73bc42"
+                android:text="기록해볼게요"
+                android:textSize="15sp"
+                android:textColor="#ffffff"
+                android:letterSpacing="-0.01"
+                android:lineSpacingExtra="0sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="62.5dp"/>
+    </LinearLayout>
+
+
+</FrameLayout>

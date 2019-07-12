@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="catrgories">
+        <item>전체</item>
+        <item>대외활동</item>
+        <item>학교활동</item>
+        <item>공모전</item>
+        <item>경력사항</item>
+        <item>기타</item>
+    </string-array>
+</resources>

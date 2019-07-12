@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:contentInsetStart="0dp"
+        android:background="@color/colorMain1">
+    <LinearLayout
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+                android:layout_marginRight="2dp"
+                android:id="@+id/img_toolbar_signup2_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_back"/>
+        <TextView
+                android:text="정보입력"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:lineSpacingExtra="9sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+</android.support.v7.widget.Toolbar>

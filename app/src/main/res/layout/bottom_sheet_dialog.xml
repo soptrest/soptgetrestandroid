@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="#ffffff">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:foreground="?attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:paddingTop="20dp"
+            android:paddingBottom="19dp"
+            android:paddingLeft="16dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="카테고리"
+                android:textColor="#82bf59"
+                android:textSize="17sp" />
+    </LinearLayout>
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#bfbfbf"/>
+
+    <LinearLayout
+            android:id="@+id/cate1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:paddingBottom="14dp"
+            android:paddingTop="14dp"
+            android:paddingLeft="16dp">
+
+        <TextView
+                android:id="@+id/cate1_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="대외활동"
+                android:textColor="#737373"
+                android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#bfbfbf"/>
+    <LinearLayout
+            android:id="@+id/cate2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:paddingBottom="14dp"
+            android:paddingTop="14dp"
+            android:paddingLeft="16dp">
+
+
+        <TextView
+                android:id="@+id/cate2_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="학교활동"
+                android:textColor="#737373"
+                android:textSize="16sp" />
+    </LinearLayout>
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#bfbfbf"/>
+
+    <LinearLayout
+            android:id="@+id/cate3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:paddingBottom="14dp"
+            android:paddingTop="14dp"
+            android:paddingLeft="16dp">
+
+
+        <TextView
+                android:id="@+id/cate3_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="공모전"
+                android:textColor="#737373"
+                android:textSize="16sp" />
+    </LinearLayout>
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#bfbfbf"/>
+    <LinearLayout
+            android:id="@+id/cate4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:paddingBottom="14dp"
+            android:paddingTop="14dp"
+            android:paddingLeft="16dp">
+
+
+        <TextView
+                android:id="@+id/cate4_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="경력사항"
+                android:textColor="#737373"
+                android:textSize="16sp" />
+    </LinearLayout>
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#bfbfbf"/>
+
+    <LinearLayout
+            android:id="@+id/cate5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:paddingBottom="14dp"
+            android:paddingTop="14dp"
+            android:paddingLeft="16dp">
+
+
+        <TextView
+                android:id="@+id/cate5_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="기타"
+                android:textColor="#737373"
+                android:textSize="16sp" />
+    </LinearLayout>
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#bfbfbf"/>
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="#ffffff"/>
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".Fragment.JobFragment">
+    <RelativeLayout
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <include
+                    android:id="@+id/toolbar_recruit"
+                    layout="@layout/toolbar_recruit" />
+            <android.support.v4.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:background="@drawable/recruit_shadow"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="12dp"
+                            android:paddingBottom="11dp">
+
+                        <TextView
+                                android:id="@+id/recruit_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="현재날짜"
+                                android:textColor="#525252"
+                                android:textSize="18sp" />
+                        <View
+                                android:layout_width="3dp"
+                                android:layout_height="wrap_content"/>
+
+                        <ImageView
+                                android:id="@+id/btn_recruit_date"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/btn_dropdown_present" />
+
+                    </LinearLayout>
+
+                        <android.support.v7.widget.RecyclerView
+                                android:id="@+id/rv_recruit_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>

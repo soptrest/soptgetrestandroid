@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorMain1"
+        tools:context=".Activity.LoginActivity">
+
+    <ImageView
+        android:src="@drawable/img_illust_login_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+
+    <EditText
+        android:id="@+id/edt_login_id"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/login_item_border"
+        android:paddingVertical="11dp"
+        android:paddingLeft="22dp"
+        android:hint="아이디"
+        android:textColorHint="#aac797"
+        android:textColor="#383838"
+        android:textSize="14sp"
+        android:letterSpacing="-0.02"
+        android:lineSpacingExtra="6sp"
+        android:layout_marginHorizontal="41dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edt_login_pw"
+        android:layout_below="@+id/edt_login_id"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/login_item_border"
+        android:paddingVertical="11dp"
+        android:paddingLeft="22dp"
+        android:hint="비밀번호"
+        android:textColorHint="#aac797"
+        android:textColor="#383838"
+        android:textSize="14sp"
+        android:letterSpacing="-0.02"
+        android:lineSpacingExtra="6sp"
+        android:layout_marginHorizontal="41dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_login"
+        android:layout_below="@+id/edt_login_pw"
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="41dp"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_login_auto"
+                android:background="@drawable/login_button_auto_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_toRightOf="@+id/img_login_auto"
+                android:layout_marginLeft="6dp"
+                android:text="자동로그인"
+                android:textSize="13sp"
+                android:textColor="#ffffff"
+                android:letterSpacing="-0.02"
+                android:lineSpacingExtra="6sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_toLeftOf="@+id/txt_login_signup"
+                android:layout_marginRight="3dp"
+                android:text="처음이라구요?"
+                android:textSize="11sp"
+                android:textColor="#ffffff"
+                android:letterSpacing="-0.02"
+                android:lineSpacingExtra="6sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txt_login_signup"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="3dp"
+                android:text="회원가입"
+                android:textSize="12sp"
+                android:textColor="#ffffff"
+                android:letterSpacing="-0.02"
+                android:lineSpacingExtra="6sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_login_signin"
+        android:layout_below="@+id/rl_login"
+        android:layout_marginTop="27dp"
+        android:layout_marginHorizontal="41dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/login_button_border"
+        android:text="들어갈래요"
+        android:textSize="15sp"
+        android:letterSpacing="-0.02"
+        android:lineSpacingExtra="7sp"
+        android:textColor="#82bf59"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

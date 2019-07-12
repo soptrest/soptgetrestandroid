@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.PortfolioChoice1Fragment">
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <ImageView
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            android:src="@drawable/img_blank"
+            android:layout_centerInParent="true"
+            android:id="@+id/img_portfolio_choice1_blank"/>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/img_portfolio_choice1_blank"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="24.9dp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="아직 기록을 하지 않았어요."
+                android:textSize="14sp"
+                android:textColor="#b1b1b1"
+                android:lineSpacingExtra="2sp"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="어떤 경험을 했는지 알려주세요!"
+                android:textSize="14sp"
+                android:textColor="#b1b1b1"
+                android:lineSpacingExtra="2sp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    app:contentInsetStart="0dp"
+    android:elevation="4dp"
+    android:background="#ffffff"
+    android:theme="@style/AppTheme">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="16dp">
+
+        <ImageView
+            android:id="@+id/img_resume_read_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_weight="0"
+            android:layout_marginTop="17dp"
+            android:clickable="true"
+            android:src="@drawable/btn_back"/>
+
+        <TextView
+            android:id="@+id/txt_resume_read_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6글자이후..."
+            android:textSize="20sp"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="13dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimaryLightGreen"/>
+
+
+        <ImageView
+            android:id="@+id/img_resume_read_edit"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/btn_edit_color"/>
+
+    </LinearLayout>
+</android.support.v7.widget.Toolbar>

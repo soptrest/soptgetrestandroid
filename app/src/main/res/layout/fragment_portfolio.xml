@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             tools:context=".Fragment.PortfolioFragment"
+            android:id="@+id/fl_portfolio">
+
+        <LinearLayout
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include
+                android:id="@+id/toolbar_portfolio"
+                layout="@layout/toolbar_portfolio"/>
+            <android.support.design.widget.TabLayout
+                android:background="#ffffff"
+                android:theme="@style/AppTheme"
+                android:id="@+id/tl_main_portfolio_category"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                app:tabMode="scrollable"
+                app:tabIndicatorColor="#82bf59">
+            </android.support.design.widget.TabLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_main_portfolio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v4.view.ViewPager>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+            </LinearLayout>
+        </LinearLayout>
+
+
+</FrameLayout>

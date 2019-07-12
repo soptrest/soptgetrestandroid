@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activity.ViewPortActivity"
+        android:background="#ffffff">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <include
+                android:id="@+id/toolbar_view"
+                layout="@layout/toolbar_view" />
+
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="550dp">
+
+                    <ImageView
+                            android:scaleType="centerCrop"
+                            android:id="@+id/img_view_photo"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:src="@drawable/img_port_blank" />
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="360dp"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/top_layout_border"
+                            android:orientation="vertical"
+                            android:paddingLeft="16dp"
+                            android:paddingTop="30dp"
+                            android:paddingRight="16dp">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="제목"
+                                    android:textColor="#73bc42"
+                                    android:textSize="15sp" />
+
+                            <TextView
+                                    android:id="@+id/view_port_title"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:text="솝트"
+                                    android:textColor="#38362e"
+                                    android:paddingLeft="46dp"
+                                    android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="14dp">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="카테고리"
+                                    android:textColor="#73bc42"
+                                    android:textSize="15sp" />
+
+                            <TextView
+                                    android:id="@+id/view_port_category"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:text="동아리"
+                                    android:textColor="#38362e"
+                                    android:paddingLeft="20dp"
+                                    android:textSize="15sp" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="14dp"
+                                android:paddingBottom="18dp">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="기간"
+                                    android:textColor="#73bc42"
+                                    android:textSize="15sp" />
+
+                            <TextView
+                                    android:id="@+id/view_start_port"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:paddingLeft="46dp"
+                                    android:text="YYYY. MM.DD"
+                                    android:textColor="#38362e"
+                                    android:textSize="15sp" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="8dp"
+                                    android:paddingRight="8dp"
+                                    android:text="~"
+                                    android:textColor="#38362e" />
+
+                            <TextView
+                                    android:id="@+id/view_end_port"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:text="YYYY. MM.DD"
+                                    android:textColor="#38362e "
+                                    android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#bfbfbf" />
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="500dp">
+
+                            <TextView
+                                    android:id="@+id/view_port_contents"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:text="자기소개서를 작성해보세요."
+                                    android:textColor="#38362e"
+                                    android:paddingTop="20dp"
+                                    android:textSize="16sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+</RelativeLayout>

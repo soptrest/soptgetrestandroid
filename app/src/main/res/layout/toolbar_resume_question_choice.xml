@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    app:contentInsetStart="0dp"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="16dp">
+
+        <ImageView
+            android:id="@+id/btn_toolbar_resumequestion_choice_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_weight="0"
+            android:layout_marginTop="17dp"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/txt_toolbar_resumequestion_choice_company"
+            android:layout_weight="1"
+            android:text="오리온"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="13dp"
+            android:textColor="@color/colorPrimaryLightGreen"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="9sp" />
+
+        <ImageView
+            android:id="@+id/btn_toolbar_resumequestion_choice_done"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_weight="0"
+            android:layout_marginTop="17dp"
+            android:src="@drawable/btn_done_color"/>
+    </LinearLayout>
+</android.support.v7.widget.Toolbar>

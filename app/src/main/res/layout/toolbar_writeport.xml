@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   app:contentInsetStart="0dp"
+                                   android:background="#ffffff"
+                                   android:theme="@style/AppTheme">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+        <ImageView
+                android:id="@+id/img_toolbar_write_port_back"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/btn_back" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="기록작성"
+                android:paddingLeft="13dp"
+                android:textColor="#82bf59"
+                android:textSize="18sp" />
+
+        <ImageView
+                android:id="@+id/txt_toolbar_write_port_do"
+                android:src="@drawable/btn_save_color"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:text="확인"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+    </LinearLayout>
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="#ffffff"
+    app:contentInsetStart="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:text="나의 자소서"
+            android:textColor="#82bf59"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/img_toolbar_resumelist_modify_done"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_weight="0"
+            android:src="@drawable/btn_done_color"
+            android:clickable="true" />
+
+    </LinearLayout>
+</android.support.v7.widget.Toolbar>

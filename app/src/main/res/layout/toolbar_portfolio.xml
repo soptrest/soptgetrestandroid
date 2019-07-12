@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="#ffffff"
+        app:contentInsetStart="0dp">
+    <RelativeLayout
+            android:layout_marginLeft="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+                android:id="@+id/txt_toolbar_portfolio_title"
+                android:text="포트폴리오"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:lineSpacingExtra="9sp"
+                android:textColor="#82bf59"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <ImageView
+                android:src="@drawable/btn_write"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:id="@+id/btn_toolbar_portfolio_writing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

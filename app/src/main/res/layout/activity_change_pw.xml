@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Activity.ChangePwActivity">
+
+    <include android:id="@+id/toolbar_chagnge_pw"
+             layout="@layout/toolbar_change_pw" />
+
+    <TextView
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="16dp"
+            android:textSize="15sp"
+            android:textColor="#57564f"
+            android:letterSpacing="-0.04"
+            android:lineSpacingExtra="3sp"
+            android:text="새로운 비밀번호를 입력해 주세요"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edt_change_pw_write"
+        android:hint="비밀번호(8~32자리)"
+        android:textColorHint="#adadad"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:letterSpacing="-0.02"
+        android:lineSpacingExtra="6sp"
+        android:layout_marginHorizontal="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="11dp"/>
+
+    <EditText
+        android:id="@+id/edt_change_pw_rewrite"
+        android:hint="비밀번호 재입력"
+        android:textColorHint="#adadad"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:letterSpacing="-0.02"
+        android:lineSpacingExtra="6sp"
+        android:layout_marginHorizontal="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_marginBottom="11dp"/>
+
+
+
+    <TextView
+            android:layout_marginLeft="16dp"
+            android:text="비밀번호는 8~16자의 영문, 숫자, 특수문자를 조합하여
+설정해 주세요."
+            android:lineSpacingExtra="3sp"
+            android:letterSpacing="-0.02"
+            android:textSize="12sp"
+            android:textColor="#7c7c7c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <TextView
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="7dp"
+            android:text="안전한 계정 사용을 위해 비밀번호는 주기적으로 변경해 주세요"
+            android:lineSpacingExtra="6sp"
+            android:letterSpacing="-0.02"
+            android:textSize="12sp"
+            android:textColor="#7c7c7c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:id="@+id/btn_change_pw_submit"
+            android:background="@drawable/signup_btn_incomplete_border"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="63dp"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="바꿀래요"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            android:letterSpacing="-0.08"/>
+
+</LinearLayout>

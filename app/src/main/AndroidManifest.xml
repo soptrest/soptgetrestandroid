@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.getrest">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCEPT_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCEPT_WIFI_STATE"/>
+
+    <application
+            android:name=".Network.ApplicationController"
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            android:usesCleartextTraffic="true">
+        <activity android:name=".Activity.ModifyPortAddCategoryActivity">
+        </activity>
+        <activity android:name=".Activity.WritePortAddCategoryActivity">
+        </activity>
+        <activity android:name=".Activity.LeaveActivity">
+        </activity>
+        <activity android:name=".Activity.ResumeEditActivity"/>
+        <activity android:name=".Activity.ResumeListDefaultActivity"/>
+        <activity android:name=".Activity.ResumeQuestionChosenActivity"/>
+        <activity android:name=".Activity.ResumeQuestionChoiceActivity"/>
+        <activity android:name=".Activity.ResumeToTextActivity"/>
+        <activity android:name=".Activity.ResumeQuestionActivity"/>
+        <activity android:name=".Activity.WritePortActivity"/>
+        <activity android:name=".Activity.ChangePwActivity"/>
+        <activity android:name=".Activity.ViewPortActivity"/>
+        <activity android:name=".Activity.RecruitDetailActivity"/>
+        <activity android:name=".Activity.ModifyPortActivity"/>
+        <activity android:name=".Activity.ResumeWriteActivity"/>
+        <activity android:name=".Activity.ResumeListModifyActivity"/>
+        <activity android:name=".Activity.ResumeReadActivity"/>
+        <activity android:name=".Activity.ViewActivity"/>
+        <activity
+                android:name=".Activity.SignupActivity"
+                android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".Activity.LoginActivity">
+
+        </activity>
+        <activity
+                android:name=".Activity.SplashActivity"
+                android:theme="@style/SplashTheme">
+
+        </activity>
+        <activity android:name=".Activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

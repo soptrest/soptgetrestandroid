@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_height="45dp"
+    android:background="#ffffff">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp">
+
+        <RelativeLayout
+                android:id="@+id/rl_nav_category_main_portfolio_tab1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center">
+            <TextView
+                    android:text="전체"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="@drawable/portfolio_tab_text_selector"
+                    android:letterSpacing="-0.05"
+                    android:lineSpacingExtra="7sp"/>
+        </RelativeLayout>
+        <RelativeLayout
+                android:id="@+id/rl_nav_category_main_portfolio_tab2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center">
+            <TextView
+                    android:text="대외활동"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="@drawable/portfolio_tab_text_selector"
+                    android:letterSpacing="-0.05"
+                    android:lineSpacingExtra="7sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/rl_nav_category_main_portfolio_tab3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center">
+            <TextView
+                    android:text="학교활동"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="@drawable/portfolio_tab_text_selector"
+                    android:letterSpacing="-0.05"
+                    android:lineSpacingExtra="7sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/rl_nav_category_main_portfolio_tab4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center">
+            <TextView
+                    android:text="공모전"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="@drawable/portfolio_tab_text_selector"
+                    android:letterSpacing="-0.05"
+                    android:lineSpacingExtra="7sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/rl_nav_category_main_portfolio_tab5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center">
+            <TextView
+                    android:text="경력사항"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="@drawable/portfolio_tab_text_selector"
+                    android:letterSpacing="-0.05"
+                    android:lineSpacingExtra="7sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/rl_nav_category_main_portfolio_tab6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center">
+            <TextView
+                    android:text="기타"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="@drawable/portfolio_tab_text_selector"
+                    android:letterSpacing="-0.05"
+                    android:lineSpacingExtra="7sp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

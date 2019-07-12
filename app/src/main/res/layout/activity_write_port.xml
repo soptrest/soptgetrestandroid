@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activity.WritePortActivity"
+        android:background="#ffffff">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <include
+                android:id="@+id/toolbar_writeport"
+                layout="@layout/toolbar_writeport" />
+
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="550dp"
+                    android:orientation="vertical">
+
+                <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="550dp"
+                        android:background="#f5f5f5">
+
+                    <FrameLayout
+                            android:id="@+id/frame"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp">
+
+                        <ImageView
+                                android:scaleType="centerCrop"
+                                android:id="@+id/img_write_photo"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp" />
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:background="#f5f5f5"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="15dp">
+
+                            <ImageView
+                                    android:id="@+id/default_img"
+                                    android:layout_width="85.8dp"
+                                    android:layout_height="82.4dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/img_blank_photo" />
+
+                            <Button
+                                    android:id="@+id/btn_add_photo"
+                                    android:layout_width="96dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/photo_btn_border"
+                                    android:text="사진추가"
+                                    android:textColor="#ffffff" />
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="360dp"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/top_layout_border"
+                            android:orientation="vertical"
+                            android:paddingLeft="16dp"
+                            android:paddingTop="30dp"
+                            android:paddingRight="16dp">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="제목"
+                                    android:textColor="#73bc42"
+                                    android:textSize="15sp" />
+
+                            <EditText
+                                    android:id="@+id/port_title"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:hint="입력하세요"
+                                    android:textColorHint="#bfbfbf"
+                                    android:paddingLeft="46dp"
+                                    android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="14dp">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="카테고리"
+                                    android:textColor="#73bc42"
+                                    android:textSize="15sp" />
+
+                            <TextView
+                                    android:id="@+id/port_category"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:text="항목"
+                                    android:textColor="#bfbfbf"
+                                    android:paddingLeft="20dp"
+                                    android:textSize="15sp" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="14dp"
+                                android:paddingBottom="18dp">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="기간"
+                                    android:textColor="#73bc42"
+                                    android:textSize="15sp" />
+
+                            <TextView
+                                    android:id="@+id/start_port"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:paddingLeft="46dp"
+                                    android:text="YYYY. MM.DD"
+                                    android:textColor="#bfbfbf"
+                                    android:textSize="15sp" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="8dp"
+                                    android:paddingRight="8dp"
+                                    android:text="~"
+                                    android:textColor="#bfbfbf" />
+
+                            <TextView
+                                    android:id="@+id/end_port"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:text="YYYY. MM.DD"
+                                    android:textColor="#bfbfbf"
+                                    android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#bfbfbf" />
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="500dp">
+
+                            <EditText
+                                    android:id="@+id/port_contents"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:hint="포트폴리오를 작성해보세요."
+                                    android:paddingTop="20dp"
+                                    android:textSize="16sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+</RelativeLayout>
